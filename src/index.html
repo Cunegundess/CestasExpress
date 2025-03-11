@@ -14,38 +14,50 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="bg-white text-black font-bold fixed w-full z-10 shadow-lg">
+    <nav class="bg-white text-black font-bold fixed w-full z-50 shadow-lg">
       <div
-        class="container mx-auto px-4 py-3 flex items-center justify-between"
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
       >
         <div class="flex items-center gap-2">
           <img
             src="images/logo.webp"
             alt="Cestas Express"
-            class="w-10 h-10 rounded-full"
+            class="w-8 h-8 md:w-10 md:h-10 rounded-full"
           />
-          <a href="#hero" class="text-xl">Cestas Express</a>
+          <a href="#hero" class="text-lg md:text-xl">Cestas Express</a>
         </div>
         <div class="hidden md:flex space-x-6">
           <a href="#testimonials" class="hover:text-red-600">Avaliações</a>
           <a href="#products" class="hover:text-red-600">Produtos</a>
           <a href="#contact" class="hover:text-red-600">Contato</a>
         </div>
-        <button class="md:hidden" id="mobile-menu-button">
-          <i class="fas fa-bars text-2xl"></i>
+        <button class="md:hidden p-2" id="mobile-menu-button">
+          <i class="fas fa-bars text-xl"></i>
         </button>
       </div>
     </nav>
 
     <!-- Mobile Menu -->
     <div
-      class="hidden fixed w-full bg-white text-black z-10 shadow-lg"
+      class="hidden fixed w-full bg-white text-black z-40 shadow-lg top-[60px]"
       id="mobile-menu"
     >
-      <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-        <a href="#testimonials" class="hover:text-red-600">Avaliações</a>
-        <a href="#products" class="hover:text-red-600">Produtos</a>
-        <a href="#contact" class="hover:text-red-600">Contato</a>>
+      <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+        <a
+          href="#testimonials"
+          class="block py-2 hover:text-red-600 text-center text-lg"
+          >Avaliações</a
+        >
+        <a
+          href="#products"
+          class="block py-2 hover:text-red-600 text-center text-lg"
+          >Produtos</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 hover:text-red-600 text-center text-lg"
+          >Contato</a
+        >
       </div>
     </div>
 
@@ -97,7 +109,7 @@
                 <img
                   src="images/ifood-logo.png"
                   alt="Ifood logo"
-                  class="w-27 h-16 p-1"
+                  class="w-16 h-10 md:w-32 md:h-16 p-1 md:p-2"
                 />
               </div>
               <img
@@ -555,19 +567,25 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white shadow-xl text-black py-8">
+    <footer class="bg-white shadow-xl text-black pt-20 md:py-8">
       <div class="container mx-auto px-4">
-        <div class="pt-2 text-center flex flex-row justify-between">
-          <div>
-            <p>&copy; 2025 Cestas Express. Todos os direitos reservados.</p>
-            <p>São José dos Campos - SP - Brasil</p>
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+        >
+          <div class="text-center md:text-left">
+            <p class="text-sm md:text-base">
+              &copy; 2025 Cestas Express. Todos os direitos reservados.
+            </p>
+            <p class="text-sm md:text-base">
+              São José dos Campos - SP - Brasil
+            </p>
           </div>
-          <div>
-            <p>Desenvolvido por</p>
+          <div class="text-center md:text-right">
+            <p class="text-sm md:text-base">Desenvolvido por</p>
             <a
               href="https://lucascunegundesportfolio.netlify.app/"
               target="_blank"
-              class="text-blue-600 hover:scale-110 transition-transform duration-300 font-bold"
+              class="text-blue-600 hover:scale-110 transition-transform duration-300 font-bold text-sm md:text-base"
               >&lt;Cunegundes /&gt;</a
             >
           </div>
