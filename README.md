@@ -22,9 +22,3 @@ The landing page is built using the following technologies:
 - Display of a featured product (gift basket)
 - Links to social media and ordering platforms
 - Responsive design for mobile and desktop users
-
-# Access the Landing Page
-
-You can visit the live version of the landing page at:
-
-- https://cestasexpress.netlify.app/
